@@ -10,7 +10,7 @@ var win=0;
 var lose=0;
 
 var targetNum;
-var totalNum=0;
+var totalNum;;
 
 var crystal1;
 var crystal2;
@@ -29,7 +29,7 @@ function init(){
     $('#lose-count').html(historicalLose);
     }
 
-
+//initing all the variables
 targetNum=getRandom1(19,120);
 $('#target-number').html(targetNum);
 crystal1=getRandom1(1,12);
@@ -37,6 +37,15 @@ crystal2=getRandom2(1,12,crystal1);
 crystal3=getRandom2(1,12,crystal1,crystal2);
 crystal4=getRandom2(1,12,crystal1,crystal2,crystal3);
 console.log("target: "+targetNum+"  "+crystal1+"  "+crystal2+"  "+crystal3+"  "+crystal4);
+
+//resetting the old entry
+resetAll();
+}
+
+function resetAll(){
+    totalNum=0;
+    $('#total-number').html(totalNum);
+    $('#row-3').html("0");
 
 }
 
@@ -58,7 +67,6 @@ function incrementLose(){
 }
 
 function check(){
-    event.preventDefault();
     if(totalNum==targetNum){
         incrementWin();
         alert("You won!");
@@ -73,6 +81,7 @@ function check(){
 function saveAndInit(){
     localStorage.setItem("lose",lose);
     localStorage.setItem("win",win);
+    init();
 }
 
 $('#img-1').on('click',function(){
