@@ -1,0 +1,65 @@
+body{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Charm', cursive;
+}
+
+.container{
+    margin: 80px;
+    height: 500px;
+    
+}
+.main-section{
+    margin: 50px;
+}
+#instruction{
+    margin-right:80px;
+    color: dimgray;
+    float: left;
+    font-size: 25;
+    line-height: 1;
+    width: 350px;
+
+}
+#game{
+    margin-top:25px;
+    float: left;
+    font-size: 28;
+    line-height: 1;
+    width: 500px;
+
+}
+
+img{
+    height: 80px;
+    width: 120px;
+}
+
+#row-1,#row-4{
+    padding: 30px;
+    margin:10px 0px;
+    background:rgba(131, 241, 190, 0.48);
+    height:100px;
+}
+#row-2{
+    padding: 40px 10px;;
+    height:170px;
+}
+#row-3{
+    padding: 15px 40px;
+    margin:10px 0px;
+    background:rgba(131, 241, 190, 0.48);
+    height:50px;
+}
+#win-lose{
+    color:red;
+}
+
+@media only screen and (max-width: 900px) {
+img{
+    height: 70px;
+    width: 100px !important;
+}
+  }
+

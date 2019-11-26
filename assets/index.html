@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Crystals Collector</title>
+        <link href="https://fonts.googleapis.com/css?family=Allura|Charm|Montez&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+        body{
+            font-family: 'Montez', cursive;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="font-weight-bold text-center">Crystals Collector</h1>
+            <section class="main-section">
+            <div class="col-md-4" id="instruction">
+                <p>
+                    <br>You will be given a random number at the start of the game.</br>
+                    <br>There a four crystals below. By clicking on the crystal you 
+                        will add a specific amount of points to your total score.</br>
+                    <br>You win the game by matching your total score to random number,
+                        you lose the game if your total score goes above the random number.</br> 
+                    <br>The value of each crystal is hidden from you until you click on it.</br>  
+                    <br>Each time when the game starts, the game will change the values of each crystal.</br>  
+                </p>
+            </div>
+            <div class="col-md-8" id="game">
+                <div class="row rounded" id="row-1">
+                    <div class="col-md-9">
+                            <span>Your target number is:&nbsp;&nbsp;</span>
+                            <span id="target-number">0</span>
+                        </div>
+                    <div class="col-md-3" id="win-lose">
+                        <div class="row" >
+                            <span>Wins:&nbsp; </span>
+                            <span id="win-count">0</span>
+                        </div>
+                        <div class="row" >
+                                <span>Lose:&nbsp;&nbsp;&nbsp; </span>
+                                <span id="lose-count">0</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="row rounded" id="row-2">
+                    <img class="col-md-3 rounded" id="img-1" src="images/heart.jpg"></img>
+                    <img class="col-md-3 rounded" id="img-2" src="images/drop.jpg"></img>
+                    <img class="col-md-3 rounded" id="img-3" src="images/triangle.jpg"></img>
+                    <img class="col-md-3 rounded" id="img-4" src="images/circle.jpg"></img>
+                </div>
+                <div class="row rounded" id="row-3">0</div>
+                <div class="row rounded" id="row-4">
+                    <header>Your Total score is:&nbsp;&nbsp;</header>
+                    <div id="total-number">0</div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        </div> 
+
+        
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="javascript/game.js"></script>
+
+    </body>
+</html>
